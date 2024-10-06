@@ -1,0 +1,219 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <!-- Contador Global -->
+    <Button
+        android:id="@+id/botonResetGlobal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET ALL"
+        android:textSize="18sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/botonIncrementar1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/contadorGlobal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.474" />
+
+    <TextView
+        android:id="@+id/contadorGlobal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/botonIncrementar1"
+        app:layout_constraintEnd_toStartOf="@+id/botonResetGlobal"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.454" />
+
+
+    <!-- Contador 1 -->
+    <Button
+        android:id="@+id/botonIncrementar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#4CAF50"
+        android:text="+1"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/botonIncrementar2"
+        app:layout_constraintEnd_toStartOf="@+id/botonReset1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/contador1" />
+
+    <TextView
+        android:id="@+id/contador1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/contador2"
+        app:layout_constraintEnd_toStartOf="@+id/botonIncrementar1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonResetGlobal"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <Button
+        android:id="@+id/botonReset1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#FFC107"
+        android:text="RESET"
+        android:textSize="18sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/botonReset2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botonIncrementar1" />
+
+
+    <!-- Contador 2 -->
+    <TextView
+        android:id="@+id/contador2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/contador3"
+        app:layout_constraintEnd_toStartOf="@+id/botonIncrementar2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/botonIncrementar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#4CAF50"
+        android:text="+1"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/botonIncrementar3"
+        app:layout_constraintEnd_toStartOf="@+id/botonReset2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/contador2" />
+
+    <Button
+        android:id="@+id/botonReset2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#FFC107"
+        android:text="RESET"
+        android:textSize="18sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/botonReset3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botonIncrementar2" />
+
+
+    <!-- Contador 3 -->
+    <Button
+        android:id="@+id/botonReset3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#FFC107"
+        android:text="RESET"
+        android:textSize="18sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/botonReset4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botonIncrementar3" />
+
+    <TextView
+        android:id="@+id/contador3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/contador4"
+        app:layout_constraintEnd_toStartOf="@+id/botonIncrementar3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/botonIncrementar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#4CAF50"
+        android:text="+1"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/botonIncrementar4"
+        app:layout_constraintEnd_toStartOf="@+id/botonReset3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toEndOf="@+id/contador3" />
+
+
+    <!-- Contador 4 -->
+    <TextView
+        android:id="@+id/contador4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="144dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/botonIncrementar4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/botonReset4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="132dp"
+        android:backgroundTint="#FFC107"
+        android:text="RESET"
+        android:textSize="18sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botonIncrementar4" />
+
+    <Button
+        android:id="@+id/botonIncrementar4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="132dp"
+        android:backgroundTint="#4CAF50"
+        android:text="+1"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/botonReset4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toEndOf="@+id/contador4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
